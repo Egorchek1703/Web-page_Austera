@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austera 2</title>
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header container-fluid">
+        <header>
+            <div class="row no-gutters menu">
+                <div class="col-ms-4 col-md-3">
+                    <a href="#">
+                        <img src="images/logo.png" alt="Austera">
+                    </a>
+                </div>
+
+                <div class="col-ms-8 col-md-9 d-none d-md-block d-md-flex align-items-center justify-content-end">
+                <!-- 
+                    d-flex и d-none это одно свойство с разными значениями, поэтому
+                    если использовать их для одного div они могут конфликтовать.
+                    Чтобы этого не происходило необходимо делать так:
+                    
+                    d-none d-md-block d-md-flex
+
+                    Т.е. от 0px до расширения md d=display будет иметь значение none (скрыто),
+                    а от md будет иметь значение flex
+                -->
+                    <ul>
+                        <li><a class="menuel" href="#">Homepage</a></li>
+                        <li><a class="menuel" href="#">Services</a></li>
+                        <li><a class="menuel" href="#">About us</a></li>
+                        <li><a class="menuel" href="#">Contact us</a></li>
+                        <li><a class="menuel" href="#"><img src="images/search.png" alt="Search"></a></li>
+                    </ul>
+                </div>
+            </div>
+           
+                <div class="head row no-gutters">
+                        <div class="col-sm-12">
+                            <h1><span>Austera</span> is simple PSD template</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <input type="button" value="Learn more">
+                        </div>
+                </div>
+        </header>
+</div>
+<div class="servicesmain container-fluid">
+    <div class="container">
+        <section>
+            <h2>Our services</h2>
+            
+            <div class="row no-gutters services">
+                <div class="col-sm-6 col-md-3">
+                    <img src="images/service1.png" alt="Responsive design">
+                    <h3>Responsive design</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laudantium dolorem, ea quaerat, soluta molestiae similique 
+                        corporis recusandae consequuntur.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="images/service2.png" alt="Endless Security">
+                    <h3>Endless Security</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laudantium dolorem, ea quaerat, soluta molestiae similique 
+                        corporis recusandae.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="images/service3.png" alt="Incredible features">
+                    <h3>Incredible features</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laudantium dolorem, ea quaerat, soluta molestiae similique 
+                        corporis.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="images/service4.png" alt="Fresh ideas">
+                    <h3>Fresh ideas</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laudantium dolorem.
+                    </p>
+                </div>
+            </div>
+
+            <input class="butser" type="button" value="Check services">
+
+            <div class="services2 row no-gutters align-items-center">
+                <div class="col-6">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laboriosam nesciunt quos porro. In repudiandae consequuntur, 
+                        iste perferendis nulla autem eius.
+                    </p>
+                    <input class="butser2" type="button" value="Show more">
+                </div>
+                <div class="col-6">
+                    <img src="images/comp.png" alt="computer">
+                </div>
+            </div>
+
+            <div class="services3 row no-gutters">
+                <div class="col-6">
+                    <img src="images/planshet.png" alt="tablet">
+                </div>
+                <div class="ser3_2 col-6">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laboriosam nesciunt quos porro. In repudiandae consequuntur, 
+                        iste perferendis nulla autem eius.
+                    </p>
+                    <input class="butserwhite" type="button" value="Show more">
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<section class="fotoman container-fluid">
+        <div class="row no-gutters align-items-center">
+            <div class="fotoman1 col-sm-12 col-md-6">
+                <!-- <img src="images/man.jpg" alt="foto"> -->
+            </div>
+
+            <div class="textandbut col-sm-12 col-md-6">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Alias tempora placeat corrupti quisquam suscipit inventore 
+                    fugit quasi deleniti. Dolorem quasi harum incidunt commodi blanditiis, 
+                    odit saepe maxime tempore molestiae necessitatibus?
+                </p>
+                <form action="#" method="#">
+                    <input class="butman" type="button" value="Learn more">
+                </form>
+            </div>
+        </div>
+</section>
+
+<section class="goods container-fluid">
+    <div class="row no-gutters">
+        <div class="good1 col-3">
+            <h3>
+                Lorem ipsum dolor sit amet
+            </h3>
+        </div>
+        <div class="good2 col-3">
+            <h3>
+                Nunc fringilla  tortor urna
+            </h3>
+        </div>
+        <div class="good3 col-3">
+            <h3>
+                Lorem ipsum dolor sit amet
+            </h3>
+        </div>
+        <div class="good4 col-3">
+            <h3>
+                Nunc fringilla  tortor urna
+            </h3>
+        </div>
+    </div>
+</section>
+<section class="teamfon container-fluid">
+    <div class="team container">
+        <h3>Check our <span>awesome team</span></h3>
+        <div class="row no-gutters">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="images/personalfoto1.png" alt="personalfoto">
+                <p class="nameteam">
+                    John Doe
+                </p>
+                <p class="postteam">
+                    Ceo&Founder
+                </p>
+                <input type="button" class="butteam" value="Check profile">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="images/personalfoto2.png" alt="personalfoto">
+                <p class="nameteam">
+                    Paul Kowalsky
+                </p>
+                <p class="postteam">
+                    Ceo&Founder
+                </p>
+                <input type="button" class="butteam" value="Check profile">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="images/personalfoto3.png" alt="personalfoto">
+                <p class="nameteam">
+                    Emilly Williams
+                </p>
+                <p class="postteam">
+                    Ceo&Founder
+                </p>
+                <input type="button" class="butteam" value="Check profile">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="images/personalfoto4.png" alt="personalfoto">
+                <p class="nameteam">
+                    Patricia Green
+                </p>
+                <p class="postteam">
+                    Ceo&Founder
+                </p>
+                <input type="button" class="butteam" value="Check profile">                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fonsntw container-fluid">
+    <div class="sntw container">
+        <div class="sntw row no-gutters">
+            <div class="col-12 col-md-6">
+            
+                <h3>Contact with us</h3>
+                <p class="adress">Marszalkowska Street 14/35 / Mazowieckie, Poland </p>
+                <p class="phone">Phone: <span>(+48) 604 234 091</span></p>
+                <p class="email">E-mail: <span>contact@austera.co</span></p>
+                <a href=""><img src="images/twitter.png" alt="twitter"></a>
+                <a href=""><img src="images/facebook.png" alt="facebook"></a>
+                <a href=""><img src="images/pintres.png" alt="pintres"></a>
+                <a href=""><img src="images/google.png" alt="google"></a>
+                <a href=""><img src="images/post.png" alt="post"></a>
+               
+            </div>
+            <div class="col-12 col-md-6">
+                <form action="#" method="#">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your e-mail adress" required>
+                    <textarea class="message" type="text" placeholder="Your message"></textarea>
+                    <input class="butsntw" type="submit" value="Send message">
+                </form>
+            </div>
+        </div>
+</section>
+<footer class="footerfon container-fluid">
+    <div class="footer container">
+        <div class="row no-gutters">
+            <div class="footer1 col-6 d-none d-md-block d-md-flex align-items-center">
+                <ul>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer2 col-6 d-flex align-items-center justify-content-end">
+                <p>Copyright ⓒ 2015. All rights reserved by MountTec</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

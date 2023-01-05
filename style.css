@@ -1,0 +1,1187 @@
+/* 
+    Чтобы выровнять по правому краю используем свойства
+    flexbox в bootstrap 4.0
+    d-flex p-2 - задает flex свойства для div и блочное 
+    поведение
+    d-inline-flex p-2 - задает flex свойства для div и строчное
+    поведение
+    . - отступ
+    * - блок
+
+    В div в котором необходимо выровнять контент
+    по левой стороне в название класса вписываем:
+    d-flex justify-content-start
+    ***......
+
+    В div в котором необходимо выровнять контент
+    по правой стороне в название класса вписываем:
+    d-flex justify-content-end
+    ......***
+    
+    В div в котором необходимо выровнять контент
+    по центру в название класса вписываем:
+    d-flex justify-content-center
+    ...***...
+
+    В div в котором необходимо выровнять контент
+    по центру с равными отступами между элементами и 
+    отсутствием отступов у боковых краев в название 
+    класса вписываем:
+    d-flex justify-content-between
+    *...*...*
+
+    В div в котором необходимо выровнять контент
+    по центру с равными отступами между элементами и 
+    и с равными отступами у боковых краев в название 
+    класса вписываем:
+    d-flex justify-content-around
+    ..*..*..*..
+*/
+
+/* 
+    Чтобы задать положение блока относительно высоты строки необходимо
+    в class div добавить:
+    d-flex align-items-start верхнее положение,
+    d-flex align-items-cemter цетральное положение,
+    d-flex align-items-end нижнее положение,
+    d-flex align-items-stretch верхнее положение во всю ширину строки.
+*/
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 -15px;
+
+}
+
+/* header */
+
+.header
+{
+    background-image: url(images/background_header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 970px;
+    padding: 0;
+}
+div[class="menu"]
+{
+    height: 140px;
+}
+header ul
+{
+    list-style-type: none;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+div ul li a[class="menuel"]
+{
+    text-decoration: none;
+    color: white;
+}
+div ul li a[class="menuel"]:hover
+{
+    text-decoration: underline;
+    color: rgb(57, 185, 239);
+    transition-property: color;
+    transition-duration: 2s;
+}
+div.menu
+{
+    background: rgba(0, 0, 0, 0.65);
+}
+div.menu ul li
+{
+    display: inline-block;
+}
+img[alt="Austera"]
+{
+    display: block;
+    padding: 48px;
+    padding-left: 100px;
+}
+.menuel
+{
+    margin-right: 50px;
+}
+.head
+{
+    height: 830px;
+}
+.header div li img
+{
+    margin-right: 20px;
+}
+header div span 
+{
+    color: rgb(57, 185, 239);
+}
+header div.head
+{
+    color: white;
+}
+header div.head p
+{
+    font-size: 24px;
+}
+header div.head h1
+{
+    font-size: 72px;
+}
+header div input[type="button"]
+{
+    color: white;
+    border: 1px solid rgb(46, 186, 238);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background: rgb(46, 186, 238);
+    border-radius: 35px;
+    cursor: pointer;
+
+    display: block;
+    margin: 0 auto;
+}
+header div input[type="button"]:hover
+{
+    background: none;
+    color: rgb(46, 186, 238);
+    transform: scale(1.04);
+    transition-property: transform, color, background;
+    transition-duration: 1.5s;
+}
+div.head h1
+{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 250px;
+}
+div.head p
+{
+    text-align: center;
+}
+
+/* section */
+/* services*/
+
+section h2
+{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 75px;
+    margin-top: 0px;
+    padding: 75px;
+    border-bottom: 1px solid gray;
+
+}
+.services h3
+{
+    text-align: center;
+}
+.services p
+{
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    line-height: 20px;
+}
+.services img
+{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+.butser
+{
+    color: white;
+    border: 1px solid rgb(46, 186, 238);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background: rgb(46, 186, 238);
+    border-radius: 35px;
+    cursor: pointer;
+
+    display: block;
+    margin: 50px auto 130px auto;
+}
+.butser:hover
+{
+    background-color: white;
+    color: rgb(46, 186, 238);
+    transform: scale(1.04);
+    transition-property: transform, color, background-color;
+    transition-duration: 1.5s;
+}
+
+/* services2 */
+
+.butser2
+{
+    color: white;
+    border: 1px solid rgb(46, 186, 238);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background: rgb(46, 186, 238);
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 50px;
+    display: block;
+}
+.butser2:hover
+{
+    background-color: white;
+    color: rgb(46, 186, 238);
+    transform: scale(1.04);
+    transition-property: transform, color, background-color;
+    transition-duration: 1.5s;
+}
+.services2 p
+{
+    font-size: 16px;
+    color: gray;
+    line-height: 30px;
+}
+.services2 h3
+{
+    font-size: 24px;
+}
+.services2 img
+{
+    width: 100%;
+    height: auto;
+}
+/* 
+    Если как в данном случае картинка вытягивает все
+    содержимое страницы и не помещается в блок, то
+    задаем ей 
+    max-width:100%; - максимальная ширина 100% блока
+    в котором содержиться картинка
+    height: auto; - чтобы сохранить пропорцию изображения
+*/
+
+/* services3 */
+
+.services3
+{
+    margin-top: 250px;
+    margin-bottom: 140px;
+}
+.services3 img
+{
+    width: 100%;
+    height: auto;
+}
+.services3 p
+{
+    font-size: 16px;
+    color: white;
+    line-height: 30px;
+}
+.services3 h3
+{
+    color: white;
+    font-size: 24px;
+}
+.ser3_2 h3, .ser3_2 input, .ser3_2 p
+{
+    margin-left: 130px;
+}
+.ser3_2 input
+{
+    color: rgb(46, 186, 238);
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background-color: white;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 50px;
+    display: block;
+}
+.ser3_2 input:hover
+{
+    background-color:rgb(46, 186, 238);
+    color: white;
+    transform: scale(1.04);
+    transition-property: transform, background-color, color;
+    transition-duration: 1.5s;
+}
+.servicesmain
+{
+    background-image: url(images/fonservices.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 1900px;
+}
+
+/* fotoman */
+
+.fotoman
+{
+    height: 670px;
+}
+.fotoman1
+{
+    height: 670px;
+    background-image: url(images/man.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+/* .fotoman img
+{
+    width: 100%;
+    height: auto;
+} */
+.fotoman div.textandbut
+{
+    width: 100%;
+    height: 100%;
+}
+.fotoman h3
+{
+    color: black;
+    font-size: 72px;
+    font-weight: bold;
+    width: 600px;
+    margin-left: 60px;
+    margin-bottom: 95px;
+    margin-top: 70px;
+}
+.fotoman p
+{
+    font-size: 16px;
+    color: gray;
+    line-height: 30px;
+    width: 80%;
+    height: auto;
+    margin-left: 60px;
+    margin-bottom: 70px;
+
+}
+.butman
+{
+    color: white;
+    border: 1px solid rgb(46, 186, 238);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background: rgb(46, 186, 238);
+    border-radius: 35px;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-bottom: 95px;
+}
+.butman:hover
+{
+    background-color: white;
+    color: rgb(46, 186, 238);
+    transform: scale(1.04);
+    transition-property: transform, color, background-color;
+    transition-duration: 1.5s;
+}
+
+/* goods */
+
+.good1
+{
+    background-image: url(images/fongood1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 430px;
+}
+.good2
+{
+    background-image: url(images/fongood2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 430px;
+}
+.good3
+{
+    background-image: url(images/fongood3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 430px;
+}
+.good4
+{
+    background-image: url(images/fongood4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 430px;
+}
+
+.good4 h3:hover, .good3 h3:hover, .good2 h3:hover, .good1 h3:hover
+{
+    background-color: rgba(46, 186, 238, 0.5);
+    transition-property: background-color;
+    transition-duration: 1.5s;
+    cursor: pointer;
+}
+.goods h3
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px 30px;
+    justify-content: center;
+}
+
+/* team */
+
+.team
+{
+    margin-bottom: 200px;
+}
+/* 
+    Свойтсво opacity со значениями от 0 до 1 задает
+    прозрачность элемента. Соответственно можно сочетать
+    с :hover и делать прояснение элемента при наведении.
+
+*/
+.team img
+{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    opacity: 0.8;
+}
+.team img:hover
+{
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1.5s;
+    cursor: pointer;
+    background-color: rgba(46, 186, 238, 0.4);
+}
+.teamfon
+{
+    background-color: white;
+}
+.team h3
+{
+    font-size: 72px;
+    width: 55%;
+    text-align: start;
+}
+.team h3 span
+{
+    color: rgb(46, 186, 238);
+}
+p.nameteam
+{
+    font-size: 32px;
+    text-align: center;
+}
+p.postteam
+{
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+}
+.team input[type="button"]
+{
+    color: white;
+    border: 1px solid rgb(46, 186, 238);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background: rgb(46, 186, 238);
+    border-radius: 35px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+.team input[type="button"]:hover
+{
+    background-color: white;
+    color: rgb(46, 186, 238);
+    transform: scale(1.04);
+    transition-property: transform, color, background-color;
+    transition-duration: 1.5s;
+}
+
+/* social networks */
+
+.fonsntw
+{
+    background-image: url(images/socialntwfon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sntw h3
+{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+    margin: 150px 0 60px 0;
+}
+.adress
+{
+    color: gray;
+    font-size: 16px;
+}
+.phone, .email
+{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.phone span, .email span
+{
+    color: rgb(46, 186, 238);
+}
+.phone span, .email span:hover
+{
+    cursor: pointer;
+}
+.sntw img
+{
+    margin: 30px 25px 150px 0;
+}
+/* form */
+.sntw input[type="text"],
+.sntw input[type="email"]
+{
+    background: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+}
+.sntw input[placeholder="Your Name"]
+{
+    margin-top: 150px;
+}
+.sntw .message
+{
+    height: 190px;
+    border: 1px solid white;
+    color: white;
+    background: none;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    resize: none;
+}
+.butsntw
+{
+    width: auto;
+    color: white;
+    border: 1px solid rgb(46, 186, 238);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background: rgb(46, 186, 238);
+    border-radius: 35px;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto 0 auto;
+}
+.butsntw:hover
+{
+    background: none;
+    color: rgb(46, 186, 238);
+    transform: scale(1.02);
+    transition-property: transform, color, background-color;
+    transition-duration: 1.5s;
+}
+
+/* footer */
+
+.footerfon
+{
+    background-color: black;
+    background-size: 100% auto;
+    height: 135px;
+}
+div.footer
+{
+    height: inherit;
+}
+.footer1
+{
+    height: 135px;
+}
+.footer ul
+{
+    padding: 0;
+}
+.footer ul li
+{
+    display: inline-block;
+    list-style-type: none;
+}
+.footer ul li a
+{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.footer ul li a:hover
+{
+    text-decoration: underline;
+    color: rgb(57, 185, 239);
+    transition-property: color;
+    transition-duration: 2s;
+}
+.footer2 p
+{
+    color: white;
+}
+
+/* ADAPTIVE */
+/* 
+    Куски кода для сохранения:
+
+    Адаптив bootstrap
+    Адаптив изображения вся шиирна блока
+    Адаптив изображения центр блока
+
+*/
+
+/* < 576 */
+
+@media (max-width: 575.98px) 
+{
+
+}
+
+/* 576 - 768 */
+
+@media (max-width: 767.98px) 
+{
+/* header */
+.header div.head h1
+{
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+}
+.header
+{
+    background-size: 100% 600px;
+}
+.header .head
+{
+    height: 460px;
+}
+/* servicesmain */
+.servicesmain .butser
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.servicesmain .butser h2
+{
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.servicesmain .services3
+{
+    margin: 30px auto;
+    padding: 10px 0;
+}
+.servicesmain .ser3_2 h3, .servicesmain .ser3_2 p
+{
+    font-size: 16px;
+    display: block;
+    margin: 0 auto 10px 20px;
+    max-width: 100%;
+    color: black;
+}
+/* fotoman */
+section.fotoman
+{
+    height: 700px;
+}
+section.fotoman .fotoman1
+{
+    height: 400px;
+    background-image: url(images/man.jpg);
+    background-size: auto 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+section.fotoman .textandbut h3
+{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+section.fotoman p
+{
+    font-size: 16px;
+    color: gray;
+    line-height: 25px;
+    width: 90%;
+    
+    margin-left: 60px;
+}
+section.fotoman .butman
+{
+    margin: 30px auto;
+}
+
+/* goods */
+.goods 
+{
+    max-height: 200px;
+}
+.goods .row
+{
+    height: inherit;
+}
+.goods .good1 h3, .goods .good2 h3, .goods .good3 h3, .goods .good4 h3
+{
+    font-size: 25px;
+    padding: 10px;
+    max-height: 200px;
+}
+.goods .good1, .goods .good2, .goods .good3, .goods .good4
+{
+    max-height: 200px;
+    background-size: 100% 200px;
+    
+}
+.fotoman h3 
+{
+    max-width: 100%;
+}
+/* team */
+.teamfon .team div input 
+{
+    margin-bottom: 20px;
+}
+/* contacts */
+.fonsntw
+{
+    background-image: url(images/socialntwfon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sntw h3
+{
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+    margin: 80px 0 40px 0;
+}
+.adress
+{
+    color: gray;
+    font-size: 16px;
+}
+.phone, .email
+{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.sntw img
+{
+    margin: 15px 10px 40px 0;
+}
+/* form */
+.sntw input[type="text"],
+.sntw input[type="email"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+}
+.sntw input[placeholder="Your Name"]
+{
+    margin-top: 80px;
+}
+.sntw .message
+{
+    height: 150px;
+    border: 1px solid white;
+    color: white;
+    background: none;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+}
+.butsntw
+{
+    padding: 8px 22px;
+    font-size: 1.1em;
+    border-radius: 35px;
+    margin: 20px auto 30px auto;
+}
+
+}
+
+        /* 768 - 992 */
+
+    @media (max-width: 991.98px) 
+
+{
+/* header */
+.menuel
+{
+    margin-right: 17px;
+}
+header div.head h1
+{
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 220px;
+}
+.head p 
+{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header
+{
+    background-image: url(images/background_header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+}
+.head
+{
+    height: 660px;
+}
+/* servicesmain */
+.servicesmain .services p 
+{
+    color: black;
+    font-weight: 500;
+}
+.servicesmain .butser2
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.servicesmain .services3
+{
+    margin: 80px auto;
+    padding: 30px 0;
+}
+.servicesmain .ser3_2 h3, .servicesmain .ser3_2 p
+{
+    display: block;
+    margin: 0 auto 20px 30px;
+    max-width: 100%;
+    color: black;
+}
+.servicesmain .services3
+{
+    margin: 10px auto;
+}
+.servicesmain .services3 p
+{
+    font-size: 16px;
+}
+.servicesmain .services3 input 
+{
+    display: block;
+    margin: 0 auto 0 30px;
+    font-size: 16px;
+}
+/* fotoman */
+section.fotoman
+{
+    height: 660px;
+    margin: 30px 0;
+}
+section.fotoman form
+{
+   margin-bottom: 30px;
+}
+section.fotoman h3
+{
+    margin-top: 30px;
+}
+/* goods */
+.goods 
+{
+    max-height: 200px;
+}
+.goods .row
+{
+    height: inherit;
+}
+section.goods .good1 h3, section.goods .good2 h3, section.goods .good3 h3, section.goods .good4 h3
+{
+    font-size: 16px;
+    padding: 10px;
+    max-height: 200px;
+}
+.goods .good1, .goods .good2, .goods .good3, .goods .good4
+{
+    max-height: 200px;
+    background-size: 100% 200px;
+    
+}
+.fotoman h3 
+{
+    max-width: 100%;
+}
+/* team */
+.teamfon .team div input 
+{
+    margin-bottom: 20px;
+}
+/* contacts */
+.fonsntw
+{
+    background-image: url(images/socialntwfon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sntw h3
+{
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+    margin: 80px 0 40px 0;
+}
+.adress
+{
+    color: gray;
+    font-size: 16px;
+}
+.phone, .email
+{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.sntw img
+{
+    margin: 15px 10px 40px 0;
+}
+/* form */
+.sntw input[type="text"],
+.sntw input[type="email"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+}
+.sntw input[placeholder="Your Name"]
+{
+    margin-top: 80px;
+}
+.sntw .message
+{
+    height: 150px;
+    border: 1px solid white;
+    color: white;
+    background: none;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+}
+.butsntw
+{
+    padding: 8px 22px;
+    font-size: 1.1em;
+    border-radius: 35px;
+    margin: 20px auto 30px auto;
+}
+}
+
+        /* 992-1100 */
+    @media (max-width: 1099.98px) 
+
+{
+.servicesmain
+{
+    background-image: url(images/whitefon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 1600px;
+}
+.ser3_2 h3, .ser3_2 p
+{
+    color: gray;
+}
+.services3 
+{
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+.ser3_2 input
+{
+    color: white;
+    border: 1px solid rgb(46, 186, 238);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background-color: rgb(46, 186, 238);
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 30px;
+    display: block;
+}
+.ser3_2 input:hover
+{
+    background-color: white; 
+    color: rgb(46, 186, 238);
+    transform: scale(1.04);
+    transition-property: transform, background-color, color;
+    transition-duration: 1.5s;
+}
+.goods 
+{
+    height: 330px;
+}
+.goods .row
+{
+    height: inherit;
+}
+.goods .good1 h3, .goods .good2 h3, .goods .good3 h3, .goods .good4 h3
+{
+    font-size: 30px;
+    padding: 15px;
+    height: 330px;
+}
+.goods .good1, .goods .good2, .goods .good3, .goods .good4
+{
+    height: 330px;
+    background-size: 100% 330px;
+}
+}
+
+        /* 1100 - 1200 */
+
+    @media (max-width: 1199.98px) 
+
+{
+/* fotoman */
+.fotoman 
+{
+    height: 450px;
+}
+.fotoman1
+{
+    height: 450px;
+    background-image: url(images/man.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.fotoman h3 
+{
+    font-size: 40px;
+    margin: 20px;
+    padding-right: 5px;
+    text-align: center;
+    max-width: 94%;
+}
+.fotoman p 
+{
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+}
+.butman
+{
+    display: block;
+    margin:  40px auto;
+}
+/* goods4 */
+.goods h3
+{
+    font-size: 40px;
+}
+.good1, .good2, .good3, .good4
+{
+    height: 280px;
+}
+.fotoman h3 
+{
+    max-width: 100%;
+}
+/* team */
+.team p.nameteam 
+{
+    font-size: 100%;
+    font-weight: bold;
+}
+.team h3 
+{
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+}
+}
+/* 1200-1330 */
+    @media (max-width: 1330px)
+{
+.good1, .good2, .good3, .good4
+{
+    height: 340px;
+}
+.fotoman h3 
+{
+    max-width: 100%;
+}
+.fotoman1
+{
+    height: 500px;
+    background-image: url(images/man.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+}
+/* 1330 - 1400 */
+@media (max-width: 1399.98px) 
+{
+    /* it's OK */
+}
